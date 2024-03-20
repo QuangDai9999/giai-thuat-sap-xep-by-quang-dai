@@ -65,45 +65,11 @@ components:
       properties: {enabled: false}
       type: TextBox
       layout_properties: {grid_position: 'YKQTZR,GGIFRJ CCYVQP,FNLAJP'}
-  - name: outlined_card_6
-    properties: {role: outlined-card, col_widths: '{"INJMDQ":20,"FIGLJO":40}'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'UGWZUM,CMJLTE'}
-    components:
-    - name: label_6
-      properties: {text: 'Selection Sort:'}
-      type: Label
-      layout_properties: {grid_position: 'PIQUTO,INJMDQ'}
-    - name: box_SelectionSort
-      properties: {enabled: false}
-      type: TextBox
-      layout_properties: {grid_position: 'PIQUTO,FIGLJO WCCXWZ,SKDUCZ'}
-  - name: outlined_card_7
-    properties: {role: outlined-card, col_widths: '{"PODKRZ":20,"ZPQLJN":40}'}
-    type: ColumnPanel
-    layout_properties: {grid_position: 'BGUCEF,JJEWMG'}
-    components:
-    - name: label_7
-      properties: {text: 'Bubble Sort:'}
-      type: Label
-      layout_properties: {grid_position: 'STBEGK,PODKRZ'}
-    - name: box_BubbleSort
-      properties: {enabled: false}
-      type: TextBox
-      layout_properties: {grid_position: 'STBEGK,ZPQLJN GRLXZQ,LKRZAU'}
   - name: outlined_card_8
-    properties: {role: outlined-card, col_widths: '{"RJXNWU":20,"DCOUEP":40}'}
+    properties: {role: outlined-card, col_widths: '{"DCOUEP":40}'}
     type: ColumnPanel
     layout_properties: {grid_position: 'LTABBP,GJWFMF'}
     components:
-    - name: label_8
-      properties: {text: 'Merge Sort:'}
-      type: Label
-      layout_properties: {grid_position: 'OGVXSK,RJXNWU'}
-    - name: box_MergeSort
-      properties: {enabled: false}
-      type: TextBox
-      layout_properties: {grid_position: 'OGVXSK,DCOUEP EGYENS,NGIJBC'}
     - name: btn_sapxep
       properties: {text: Sắp xếp}
       type: Button

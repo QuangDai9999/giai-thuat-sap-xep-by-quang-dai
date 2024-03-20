@@ -6,8 +6,8 @@ services:
   server_config: {}
 package_name: Giai_thuat_sap_xep
 allow_embedding: false
-name: Clone of Giai thuat sap xep
+name: ''
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
-metadata: {title: Giai thuat sap xep, description: Giai thuat sap xep}
+metadata: {title: '', description: ''}
 startup_form: Form1
 renamed: true
