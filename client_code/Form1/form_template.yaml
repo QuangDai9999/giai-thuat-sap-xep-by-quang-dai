@@ -1,0 +1,115 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+- name: outlined_card_1
+  properties: {role: outlined-card}
+  type: ColumnPanel
+  layout_properties: {slot: default}
+  components:
+  - name: outlined_card_2
+    properties: {role: outlined-card, col_widths: '{"ZMERIJ":20,"IAEOWI":40}'}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'MYOYSR,NZZZJE'}
+    components:
+    - name: label_2
+      properties: {text: 'Nhập số lượng phần tử trong dãy số nguyên:'}
+      type: Label
+      layout_properties: {grid_position: 'HXZDHK,ZMERIJ'}
+    - name: box_nhapn
+      properties: {}
+      type: TextBox
+      layout_properties: {grid_position: 'HXZDHK,IAEOWI'}
+  - name: outlined_card_3
+    properties: {role: outlined-card, col_widths: '{"QUPDZA":20,"QYMQXW":40}'}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'MJMQBE,AXFOYA'}
+    components:
+    - name: label_3
+      properties: {text: "Nh\u1eadp c\xe1c ph\u1ea7n t\u1eed c\u1ee7a d\xe3y s\u1ed1\
+          \ nguy\xean \n(c\xe1ch nhau b\u1eb1ng kho\u1ea3ng tr\u1eafng):"}
+      type: Label
+      layout_properties: {grid_position: 'RKBBGE,QUPDZA'}
+    - name: box_nhapphantu
+      properties: {}
+      type: TextBox
+      layout_properties: {grid_position: 'RKBBGE,QYMQXW'}
+  - name: outlined_card_4
+    properties: {role: outlined-card, col_widths: '{"LLKKNP":20,"EINAUW":40}'}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'DNLALI,KCMQBU'}
+    components:
+    - name: label_4
+      properties: {text: 'Dãy số nguyên trước khi sắp xếp:'}
+      type: Label
+      layout_properties: {grid_position: 'JOCTER,LLKKNP'}
+    - name: box_truockhisapxep
+      properties: {enabled: false}
+      type: TextBox
+      layout_properties: {grid_position: 'JOCTER,EINAUW'}
+  - name: outlined_card_5
+    properties: {role: outlined-card, col_widths: '{"GTWOHB":20,"GGIFRJ":40}'}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'QEGPRO,RXFIRO'}
+    components:
+    - name: label_5
+      properties: {text: 'Insertion Sort:'}
+      type: Label
+      layout_properties: {grid_position: 'YKQTZR,GTWOHB'}
+    - name: box_InsertionSort
+      properties: {enabled: false}
+      type: TextBox
+      layout_properties: {grid_position: 'YKQTZR,GGIFRJ CCYVQP,FNLAJP'}
+  - name: outlined_card_6
+    properties: {role: outlined-card, col_widths: '{"INJMDQ":20,"FIGLJO":40}'}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'UGWZUM,CMJLTE'}
+    components:
+    - name: label_6
+      properties: {text: 'Selection Sort:'}
+      type: Label
+      layout_properties: {grid_position: 'PIQUTO,INJMDQ'}
+    - name: box_SelectionSort
+      properties: {enabled: false}
+      type: TextBox
+      layout_properties: {grid_position: 'PIQUTO,FIGLJO WCCXWZ,SKDUCZ'}
+  - name: outlined_card_7
+    properties: {role: outlined-card, col_widths: '{"PODKRZ":20,"ZPQLJN":40}'}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'BGUCEF,JJEWMG'}
+    components:
+    - name: label_7
+      properties: {text: 'Bubble Sort:'}
+      type: Label
+      layout_properties: {grid_position: 'STBEGK,PODKRZ'}
+    - name: box_BubbleSort
+      properties: {enabled: false}
+      type: TextBox
+      layout_properties: {grid_position: 'STBEGK,ZPQLJN GRLXZQ,LKRZAU'}
+  - name: outlined_card_8
+    properties: {role: outlined-card, col_widths: '{"RJXNWU":20,"DCOUEP":40}'}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'LTABBP,GJWFMF'}
+    components:
+    - name: label_8
+      properties: {text: 'Merge Sort:'}
+      type: Label
+      layout_properties: {grid_position: 'OGVXSK,RJXNWU'}
+    - name: box_MergeSort
+      properties: {enabled: false}
+      type: TextBox
+      layout_properties: {grid_position: 'OGVXSK,DCOUEP EGYENS,NGIJBC'}
+    - name: btn_sapxep
+      properties: {text: Sắp xếp}
+      type: Button
+      layout_properties: {grid_position: 'FBGMDI,ZQLCXM'}
+      event_bindings: {click: btn_sapxep_click}
+- name: label_1
+  properties: {align: center, text: GIẢI THUẬT SẮP XẾP}
+  type: Label
+  layout_properties: {slot: title}
